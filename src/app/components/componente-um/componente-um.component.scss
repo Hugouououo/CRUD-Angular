@@ -1,3 +1,12 @@
-main{
-    background-color: black;
+header{
+    background-color: grey;
+    color: white;
+    display: flex;
+    align-items: center;
+    //justify-content: space-between; // joga um para cada lado
+    img{
+        margin-left: auto; // joga a imagem pra pqp
+        height: 5%;
+        width: 5%;
+    }
 }
