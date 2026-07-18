@@ -1,0 +1,16 @@
+@use '../../../styles.scss' as global;
+
+main{
+    display: flex;
+    gap: 2%;
+    margin: auto;
+           height: 50%;
+        width: 50%;
+
+    .cadastro{
+        background-color: global.$Principal;
+    }
+    .lista{
+        background-color: global.$Principal;
+    }
+}

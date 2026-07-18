@@ -3,7 +3,9 @@ $Fundo: #161e2a;
 $Principal: #729dde;
 $Destaque: #354967;
 
-//index.html
-.index-fundo{
-    background-color: $Fundo;
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
