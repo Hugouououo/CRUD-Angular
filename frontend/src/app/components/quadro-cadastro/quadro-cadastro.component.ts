@@ -12,15 +12,34 @@ import { FormsModule } from '@angular/forms';
 export class QuadroCadastroComponent {
 
   public nome:string = '';
+  public email:string = ''; 
+
+  //funcao para validar o nome (pq? pq eu posso)
+  private validaNome(nome:string):boolean {
+    if(this.nome.trim() != '' ){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+
+  //pra validar email tbm pq sim
+  private validaEmail(email:string):boolean{
+    return this.email.trim().includes('@');
+  }
 
 
   public gravar():void {
-    if(this.nome != ''){
-      alert('Usuário registrado com sucesso!')
-    } else {
-      alert('Nome de usuário')
+
+    if (this.validaNome(this.nome) == true && this.validaEmail(this.email) == true){
+      alert('Usuário cadastrado com sucesso!');
+    } else{
+      alert('Dados inválidos, verifique.');
     }
   }
+
+
 
   public cancelar():void {
     alert('cancelado');

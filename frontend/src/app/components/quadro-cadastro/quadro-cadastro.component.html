@@ -7,7 +7,7 @@
         <input type="text" [(ngModel)]="nome" name="nome" id="nome">
     
         <label for="email">E-mail:</label>
-        <input type="password" name="email" id="email">
+        <input type="email" [(ngModel)]="email" name="email" id="email">
     
         <input type="submit"  (click)="gravar()" value="Gravar" id="gravar" style="background-color: rgb(86, 255, 86);">
         <input type="submit" (click)="cancelar()" value="Cancelar" id="Cancelar" style="background-color: rgb(255, 83, 83);">
